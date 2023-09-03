@@ -1,4 +1,5 @@
 package pack;
+import java.util.Arrays;
 import java.util.Scanner;
 public class lab1_3 {
     public static void main(String[] args) {
@@ -14,8 +15,7 @@ public class lab1_3 {
                 break;
         }
     }
-    public static void ex3()
-    {
+    public static void ex3() {
         Scanner sc = new Scanner(System.in);
         System.out.println("__EXERCISE 1__");
         int i = 0;
@@ -45,12 +45,35 @@ public class lab1_3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter size of array");
         int size = 0;
+        int i = 0;
         if (sc.hasNextInt()) {
             size = sc.nextInt();
         } else {
             System.out.println("you didn't enter an integer");
         }
+        int[] array;
+        array = new int[size];
 
-
+        System.out.println("enter elements");
+        do {
+            array[i] = sc.nextInt();
+            i++;
+        }
+        while (i != size);
+        int max = array[0];
+        int min = array[0];
+        int j = 0;
+        while (j != size) {
+            if (array[j] > max) {
+                max = array[j];
+            }
+            if (array[j] < min) {
+                min = array[j];
+            }
+            j++;
+        }
+        System.out.println("max=" + max);
+        System.out.println("min=" + min);
     }
+    public static void ex5() {}
 }
