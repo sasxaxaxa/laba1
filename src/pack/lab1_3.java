@@ -17,8 +17,12 @@ public class lab1_3 {
             case 5:
                 ex5(args);
                 break;
+            case 6:
+                ex6();
+                break;
 
-
+            default:
+                System.out.println("you did not write right number");
         }
     }
 
@@ -30,8 +34,7 @@ public class lab1_3 {
         System.out.println("enter size of array");
         if (sc.hasNextInt()) {
             i = sc.nextInt();
-        }
-        else {
+        } else {
             System.out.println("you didn't enter an integer");
         }
         int[] array;
@@ -49,6 +52,7 @@ public class lab1_3 {
         System.out.println("sum of elements=" + sum);
         System.out.println("everage=" + everage);
     }
+
     public static void ex4() {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter size of array");
@@ -88,5 +92,14 @@ public class lab1_3 {
             System.out.println(args[i]);
         }
     }
+    public static void ex6() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter size of harmonic series");
+        int size = sc.nextInt();
+        for (int i = 1; i <= size; i++) {
+            System.out.println(i + " element =  1/" + i + " = " + 1./i);
+        }
+    }
+
 
 }
