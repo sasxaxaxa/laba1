@@ -31,9 +31,13 @@ public class lab1_3 {
 
     public static void ex3() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("__EXERCISE 1__");
+        System.out.println("__EXERCISE 2__\n" +
+                "Написать программу, в результате которой массив чисел создается с\n" +
+                "помощью инициализации (как в Си) вводится и считается в цикле сумма\n" +
+                "элементов целочисленного массива, а также среднее арифметическое его\n" +
+                "элементов результат выводится на экран.\n");
         int i = 0;
-        System.out.println("enter size of array");
+        System.out.println("enter size of array ->");
         if (sc.hasNextInt()) {
             i = sc.nextInt();
         } else {
@@ -41,7 +45,7 @@ public class lab1_3 {
         }
         int[] array;
         array = new int[i];
-        System.out.println("enter elements");
+        System.out.println("enter elements ->");
         for (int j = 0; j < i; j++) {
             array[j] = sc.nextInt();
         }
@@ -51,13 +55,18 @@ public class lab1_3 {
             sum = sum + array[j];
         }
         everage = sum / array.length;
-        System.out.println("sum of elements=" + sum);
-        System.out.println("everage=" + everage);
+        System.out.println("sum of elements = " + sum);
+        System.out.println("everage = " + everage);
     }
 
     public static void ex4() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter size of array");
+        System.out.println("__EXERCISE 4__\n" +
+                "Написать программу, в результате которой массив чисел вводится\n" +
+                "пользователем с клавиатуры считается сумма элементов целочисленного\n" +
+                "массива с помощью циклов do while, while, также необходимо найти\n" +
+                "максимальный и минимальный элемент в массиве, результат выводится на экран.\n");
+        System.out.println("enter size of array ->");
         int size = 0;
         int i = 0;
         if (sc.hasNextInt()) {
@@ -68,7 +77,7 @@ public class lab1_3 {
         int[] array;
         array = new int[size];
 
-        System.out.println("enter elements");
+        System.out.println("enter elements ->");
         do {
             array[i] = sc.nextInt();
             i++;
@@ -86,25 +95,33 @@ public class lab1_3 {
             }
             j++;
         }
-        System.out.println("max=" + max);
-        System.out.println("min=" + min);
+        System.out.println("max = " + max);
+        System.out.println("min = " + min);
     }
     public static void ex5(String[] args) {
+
         for (int i = 0; i < args.length; i++) {
             System.out.println(args[i]);
         }
     }
     public static void ex6() {
+        System.out.println("__EXERCISE 6__\n" +
+                "Написать программу, в результате работы которой выводятся на экран\n" +
+                "первые 10 чисел гармонического ряда (форматировать вывод)\n");
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter size of harmonic series");
+        System.out.println("enter length of harmonic series ->");
         int size = sc.nextInt();
         for (int i = 1; i <= size; i++) {
             System.out.println(i + " element =  1/" + i + " = " + 1./i);
         }
     }
     public static void ex7() {
+        System.out.println("__EXERCISE 7__\n" +
+                "Написать программу, которая с помощью метода класса, вычисляет\n" +
+                "факториал числа (использовать управляющую конструкцию цикла), проверить\n" +
+                "работу метода\n");
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter number (>0)");
+        System.out.println("enter number (>0) ->");
         int num = sc.nextInt();
         int fact = 1;
         for (int i = 1; i <= num; i++) {
