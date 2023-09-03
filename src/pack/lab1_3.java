@@ -1,6 +1,7 @@
 package pack;
-import java.util.Arrays;
+
 import java.util.Scanner;
+
 public class lab1_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,8 +14,15 @@ public class lab1_3 {
             case 4:
                 ex4();
                 break;
+            case 5:
+                ex5(args);
+                break;
+
+
         }
     }
+
+
     public static void ex3() {
         Scanner sc = new Scanner(System.in);
         System.out.println("__EXERCISE 1__");
@@ -75,5 +83,10 @@ public class lab1_3 {
         System.out.println("max=" + max);
         System.out.println("min=" + min);
     }
-    public static void ex5() {}
+    public static void ex5(String[] args) {
+        for (int i = 0; i < args.length; i++) {
+            System.out.println(args[i]);
+        }
+    }
+
 }
