@@ -3,7 +3,20 @@ import java.util.Scanner;
 public class lab1_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //exercise 1
+        System.out.println("Enter num of exercise (3-8)");
+        int num = sc.nextInt();
+        switch (num) {
+            case 3:
+                ex3();
+                break;
+            case 4:
+                ex4();
+                break;
+        }
+    }
+    public static void ex3()
+    {
+        Scanner sc = new Scanner(System.in);
         System.out.println("__EXERCISE 1__");
         int i = 0;
         System.out.println("enter size of array");
@@ -27,5 +40,17 @@ public class lab1_3 {
         everage = sum / array.length;
         System.out.println("sum of elements=" + sum);
         System.out.println("everage=" + everage);
+    }
+    public static void ex4() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter size of array");
+        int size = 0;
+        if (sc.hasNextInt()) {
+            size = sc.nextInt();
+        } else {
+            System.out.println("you didn't enter an integer");
+        }
+
+
     }
 }
