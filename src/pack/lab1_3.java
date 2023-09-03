@@ -20,7 +20,9 @@ public class lab1_3 {
             case 6:
                 ex6();
                 break;
-
+            case 7:
+                ex7();
+                break;
             default:
                 System.out.println("you did not write right number");
         }
@@ -99,6 +101,16 @@ public class lab1_3 {
         for (int i = 1; i <= size; i++) {
             System.out.println(i + " element =  1/" + i + " = " + 1./i);
         }
+    }
+    public static void ex7() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter number (>0)");
+        int num = sc.nextInt();
+        int fact = 1;
+        for (int i = 1; i <= num; i++) {
+            fact *= i;
+        }
+        System.out.println("factorial of number " + num + " = " + fact);
     }
 
 
