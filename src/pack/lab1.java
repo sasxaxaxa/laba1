@@ -2,7 +2,7 @@ package pack;
 
 import java.util.Scanner;
 
-public class lab1_3 {
+public class lab1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter num of exercise (3-8)");
