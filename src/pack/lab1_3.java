@@ -7,6 +7,7 @@ public class lab1_3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter num of exercise (3-8)");
         int num = sc.nextInt();
+        //proverka
         switch (num) {
             case 3:
                 ex3();
