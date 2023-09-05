@@ -28,8 +28,7 @@ public class Circle {
         return "Circle{" +
                 "x=" + x +", y=" + y +
                 ", r=" + r +
-                ", colour='" + colour + '\'' +
-                '}';
+                ", colour='" + colour + "}";
     }
     public double getLength(){
         double c;
