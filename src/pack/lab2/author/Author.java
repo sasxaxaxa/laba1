@@ -7,7 +7,7 @@ public class Author {
         this.gender = gender;
 
     }
-    //проверка репозитория на новом пк
+    //проверка репозитория
     private String name;
     private String email;
     private char gender;
