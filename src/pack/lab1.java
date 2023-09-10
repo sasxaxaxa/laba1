@@ -130,6 +130,4 @@ public class lab1 {
         }
         System.out.println("factorial of number " + num + " = " + fact);
     }
-
-
 }
