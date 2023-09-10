@@ -9,6 +9,7 @@ public class Shop {
         devices.add(device);
     }
     public void Remover(String device) {
+
         devices.remove(device);
     }
     public void Searcher(String device) {
