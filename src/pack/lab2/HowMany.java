@@ -15,7 +15,5 @@ public class HowMany {
             }
         }
         System.out.println(c + " слов(a)");
-
     }
-
 }
