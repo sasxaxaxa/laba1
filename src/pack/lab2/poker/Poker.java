@@ -6,7 +6,6 @@ public class Poker {
     public static int getRandomINumber(int i) {
         return (int) (Math.random() * i);
     }
-
     public static void main(String[] args) {
 
         int cardNum = 5;
@@ -38,17 +37,13 @@ public class Poker {
             else {
                 array1.add(card);
             }
-
         }
-
         for (int i = 0; i < cardNum*players; i++) {
             if (i % 5 == 0) {
                 System.out.println();
                 System.out.println(i/5+1 + "-й игрок");
             }
             System.out.println(array1.get(i));
-
         }
-
     }
 }
