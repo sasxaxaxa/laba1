@@ -7,9 +7,24 @@ public class RandomArray {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Выберите метод генерации массива\n1.Random\n2.Math");
+        int n = sc.nextInt();
 
 
+        switch (n) {
+            case 1:
+                RandomRand();
+                break;
+            case 2:
+                RandomMath();
+                break;
 
+
+        }
+    }
+
+    public static void RandomRand() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Введите размер массива");
         int size = sc.nextInt();
         ArrayList<Double> ArrayRand = new ArrayList<>(size);
@@ -23,13 +38,15 @@ public class RandomArray {
             System.out.println(rand);
         }
 
+    }
 
-
+    public static void RandomMath() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Введите размер массива");
         int size1 = sc.nextInt();
         ArrayList<Double> ArrayMath = new ArrayList<>(10);
         for (int i = 0; i < size1; i++) {
-            double rand1 = Math.random()*10;
+            double rand1 = Math.random() * 10;
             ArrayMath.add(rand1);
         }
         System.out.println("Полученный массив");
@@ -38,3 +55,8 @@ public class RandomArray {
         }
     }
 }
+
+
+
+
+
