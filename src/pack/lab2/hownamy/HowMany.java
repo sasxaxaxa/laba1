@@ -1,4 +1,4 @@
-package pack.lab2;
+package pack.lab2.hownamy;
 import java.nio.file.LinkPermission;
 import java.util.Scanner;
 public class HowMany {
