@@ -1,4 +1,4 @@
-package pack.lab3;
+package pack.lab3.randomarray;
 
 import java.lang.reflect.Array;
 import java.util.*;
@@ -70,17 +70,6 @@ public class RandomArray {
         }
     }
 }
-
-//    ObjectName[] arr = new ObjectName[10];
-//Arrays.sort(arr, new Comparator<ObjectName>() {
-//        public int compare(ObjectName o1, ObjectName o2) {
-//            return o1.toString().compareTo(o2.toString());
-//        }
-//    });
-
-//        public void sortByTitle() {
-//            Collections.sort(books, Comparator.comparing(Book::getTitle));
-//        }
 
 
 
