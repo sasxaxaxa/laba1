@@ -1,8 +1,8 @@
 package pack.lab3;
 
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Random;
+import java.lang.reflect.Array;
+import java.util.*;
+
 public class RandomArray {
     public static void main(String[] args) {
 
@@ -37,6 +37,11 @@ public class RandomArray {
         for (Double rand : ArrayRand) {
             System.out.println(rand);
         }
+        Collections.sort(ArrayRand);
+        System.out.println("Отсортированный массив");
+        for (Double rand : ArrayRand) {
+            System.out.println(rand);
+        }
 
     }
 
@@ -53,8 +58,29 @@ public class RandomArray {
         for (Double rand : ArrayMath) {
             System.out.println(rand);
         }
+        Arrays.sort(new ArrayList[]{ArrayMath});
+        System.out.println();
+        for (Double rand : ArrayMath) {
+            System.out.println(rand);
+        }
+        Collections.sort(ArrayMath);
+        System.out.println("Отсортированный массив");
+        for (Double rand : ArrayMath) {
+            System.out.println(rand);
+        }
     }
 }
+
+//    ObjectName[] arr = new ObjectName[10];
+//Arrays.sort(arr, new Comparator<ObjectName>() {
+//        public int compare(ObjectName o1, ObjectName o2) {
+//            return o1.toString().compareTo(o2.toString());
+//        }
+//    });
+
+//        public void sortByTitle() {
+//            Collections.sort(books, Comparator.comparing(Book::getTitle));
+//        }
 
 
 
