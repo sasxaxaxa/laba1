@@ -1,6 +1,5 @@
-package pack.lab3.randomarray;
+package pack.lab3.randomarray_1;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class RandomArray {

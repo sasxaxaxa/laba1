@@ -1,4 +1,4 @@
-package pack.lab3.circle;
+package pack.lab3.circle_2;
 
 public class Point {
     public Point(double x, double y) {
