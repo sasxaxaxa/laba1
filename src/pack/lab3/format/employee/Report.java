@@ -14,7 +14,7 @@ public class Report {
             array.add(employee);
         }
         for (Employee employee : array) {
-            System.out.printf("Сотрудник %s, зарплата: %.2f\n", employee.getFullname(), employee.getSalary());
+            System.out.printf("Сотрудник: %-15s %15s0 RUB%n", employee.getFullname(), employee.getSalary());
         }
     }
     public static void main(String[] args) {
