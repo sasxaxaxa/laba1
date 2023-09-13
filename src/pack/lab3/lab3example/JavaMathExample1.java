@@ -1,4 +1,4 @@
-package pack.lab3example;
+package pack.lab3.lab3example;
 
 public class JavaMathExample1{
     public static void main(String[] args){

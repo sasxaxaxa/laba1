@@ -9,8 +9,8 @@ public class BookTest {
         int num = sc.nextInt();
         for (int i = 0; i < num; i++) {
             System.out.println("Введите автора:");
-            String author = sc.nextLine();
             sc.nextLine();
+            String author = sc.nextLine();
             System.out.println("Введите название:");
             String title = sc.nextLine();
             System.out.println("Введите год издания");
@@ -27,13 +27,13 @@ public class BookTest {
             case 1:
                 shelf.sortByTitle();
                 for (Book book : shelf.getBooks()) {
-                    System.out.println("Книга '" + book.getTitle() + "', год издания: " + book.getYear());
+                    System.out.println("Книга " + book.getTitle() + ", автор: " + book.getAuthor() + ", год издания: " + book.getYear());
                 }
                 break;
             case 2:
                 shelf.sortByYear();
                 for (Book book : shelf.getBooks()) {
-                    System.out.println("Книга '" + book.getTitle() + "', год издания: " + book.getYear());
+                    System.out.println("Книга " + book.getTitle() + ", автор: " + book.getAuthor() + ", год издания: " + book.getYear());
                 }
                 break;
             case 3:

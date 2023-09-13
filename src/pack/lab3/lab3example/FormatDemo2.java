@@ -1,4 +1,4 @@
-package pack.lab3example;
+package pack.lab3.lab3example;
 
 import java.util.Formatter;
 
