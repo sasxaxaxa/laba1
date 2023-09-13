@@ -65,6 +65,8 @@ public class Convertor {
                             avilable = c.intValue();
                             System.out.printf("Вы можете купить %d EUR\n\n", avilable);
                             break;
+                        default:
+                            System.out.println("Вы ввели не подходящую валюту");
                     }
                     break;
                 case "2":
@@ -85,6 +87,8 @@ public class Convertor {
                             c = (sale.getEur() * valuee);
                             System.out.printf("Вы можете получить %.2f рублей\n\n", c);
                             break;
+                        default:
+                            System.out.println("Вы ввели не подходящую валюту");
                     }
                     break;
             }
