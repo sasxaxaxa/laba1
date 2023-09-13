@@ -51,9 +51,17 @@ public class Convertor {
                     Course.Purchase purchase = new Course.Purchase();
                     System.out.printf("Текущий курс для покупки: USD: %.2f, EUR: %.2f\nВведите количество рублей: ", purchase.getUsd(), purchase.getEur());
                     rub = sc.nextDouble();
-                    System.out.println("Выберите валюту для покупки(USD/EUR)");
+                    while (rub <= 0) {
+                        System.out.println("Вы ввели неверное количество рублей. Введите количество рублей: ");
+                        rub = sc.nextDouble();
+                    }
                     sc.nextLine();
+                    System.out.println("Выберите валюту для покупки(USD/EUR)");
                     currency = sc.nextLine().toLowerCase(Locale.ROOT);
+                    while (!currency.equals("usd") && !currency.equals("eur")) {
+                        System.out.println("Вы ввели неподходящую валюту");
+                        currency = sc.nextLine().toLowerCase(Locale.ROOT);
+                    }
                     switch (currency) {
                         case "usd":
                             c = (rub / purchase.getUsd());
@@ -65,8 +73,6 @@ public class Convertor {
                             avilable = c.intValue();
                             System.out.printf("Вы можете купить %d EUR\n\n", avilable);
                             break;
-                        default:
-                            System.out.println("Вы ввели не подходящую валюту");
                     }
                     break;
                 case "2":
@@ -74,6 +80,10 @@ public class Convertor {
                     Course.Sale sale = new Course.Sale();
                     System.out.printf("Текущий курс для продажи: USD: %.2f, EUR: %.2f\nВыберите валюту для продажи(USD/EUR)\n", sale.getUsd(), sale.getEur());
                     currency = sc.nextLine().toLowerCase(Locale.ROOT);
+                    while (!currency.equals("usd") && !currency.equals("eur")) {
+                        System.out.println("Вы ввели неподходящую валюту");
+                        currency = sc.nextLine().toLowerCase(Locale.ROOT);
+                    }
                     switch (currency) {
                         case "usd":
                             System.out.println("Введите количество долларов");
@@ -87,8 +97,6 @@ public class Convertor {
                             c = (sale.getEur() * valuee);
                             System.out.printf("Вы можете получить %.2f рублей\n\n", c);
                             break;
-                        default:
-                            System.out.println("Вы ввели не подходящую валюту");
                     }
                     break;
             }
