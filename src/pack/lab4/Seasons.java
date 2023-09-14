@@ -35,7 +35,7 @@ enum Season {
     SPRING(8),
     SUMMER(20),
     FALL(5);
-    int Temp;
+    final int Temp;
 
     Season(int Temp) {
         this.Temp = Temp;
