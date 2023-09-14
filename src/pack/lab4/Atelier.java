@@ -3,16 +3,14 @@ package pack.lab4;
 import java.util.ArrayList;
 
 class Atelier {
-
     public static void dressWomen(Clothes[] clothes) {
         System.out.println("Женская одежда");
     }
-
     public static void dressMan(Clothes[] clothes) {
     }
-
     public static void main(String[] args) {
         ArrayList<Clothes> clothes = new ArrayList<>();
+
         TShirt tShirt = new TShirt("L", 120, "Black");
         Pants pants = new Pants("M", 99, "White");
         Skirt skirt = new Skirt("S", 87, "Blue");
@@ -31,15 +29,11 @@ class Atelier {
             clothes1.dressWomen();
             System.out.println();
         }
-
-
-
     }
 
     interface MenClothing {
         void dressMan();
     }
-
     interface WomenClothing {
         void dressWomen();
     }
@@ -54,22 +48,17 @@ abstract class Clothes {
         this.cost = cost;
         this.color = color;
     }
-
     public String getSize() {
         return size;
     }
-
     public double getCost() {
         return cost;
     }
-
     public String getColor() {
         return color;
     }
-
     public void getDescription() {};
     public void dressMan() {};
-
     public void dressWomen() {};
 
 }
