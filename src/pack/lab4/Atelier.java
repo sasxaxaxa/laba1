@@ -62,8 +62,6 @@ abstract class Clothes {
     public void dressWomen() {};
 
 }
-
-// 3) Создать классы наследники класса Clothes
 class TShirt extends Clothes {
     public TShirt(String size, double cost, String color) {
         super(size, cost, color);
