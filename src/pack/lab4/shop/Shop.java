@@ -142,7 +142,6 @@ public class Shop {
             System.out.println("Отправляем код для оплаты!");
             int code = (int) (1000 + Math.random()*(9999-1000));
             System.out.printf("Ваш код: %s. Никому его не сообщайте!\nВведите код в строку ниже:\n", code);
-
             int code1 = sc.nextInt();
             if (code == code1) {
                 System.out.println("Поздравляем! Покупка совершена.");
@@ -153,8 +152,6 @@ public class Shop {
             }
         }
     }
-
-
     public static void main(String[] args) {
         if (Enter()) {
             Scanner sc = new Scanner(System.in);
@@ -175,15 +172,12 @@ enum Laptops {
     HUAWEI(90);
 
     private int price;
-
     private Laptops(int price) {
         this.price = price;
     }
-
     public int getPrice() {
         return price;
     }
-
     public void getDescription() {
         switch (this) {
             case ASUS -> System.out.println("Это самый дорогой ноутбук.");
@@ -199,15 +193,12 @@ enum Smartphones {
     REALME(50);
 
     private int price;
-
     private Smartphones(int price) {
         this.price = price;
     }
-
     public int getPrice() {
         return price;
     }
-
     public void getDescription() {
         switch (this) {
             case APPLE -> System.out.println("Это самый дорогой смартфон.");
