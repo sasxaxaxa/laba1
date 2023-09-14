@@ -14,7 +14,7 @@ class Atelier {
         TShirt tShirt = new TShirt("L", 120, "Black");
         Pants pants = new Pants("M", 99, "White");
         Skirt skirt = new Skirt("S", 87, "Blue");
-        Tie tie = new Tie("XS", 10, "Red");
+        Tie tie = new Tie("XXS", 10, "Red");
 
         clothes.add(tShirt);
         clothes.add(pants);
@@ -24,6 +24,12 @@ class Atelier {
         for (Clothes clothes1 : clothes) {
             clothes1.getDescription();
             System.out.printf(" размера %s, цветом %s, стоимостью: %.2f\n", clothes1.getSize(), clothes1.getColor(), clothes1.getCost());
+
+            String size1 = clothes1.getSize();
+            System.out.printf("Размер %s = %d. %s\n", ClothingSize.valueOf(size1),
+                    ClothingSize.valueOf(size1).getEuroSize(),
+                    ClothingSize.valueOf(size1).getDescriptions());
+
 
             clothes1.dressMan();
             clothes1.dressWomen();
@@ -123,5 +129,28 @@ class Tie extends Clothes{
     }
     public void dressWomen() {
         System.out.println("Женщину нельзя одеть в галстук");
+    }
+}
+enum ClothingSize {
+    XXS(32),
+    XS(34),
+    S(36),
+    M(38),
+    L(40);
+
+    private int euroSize;
+
+    private ClothingSize(int euroSize) {
+        this.euroSize = euroSize;
+    }
+
+    public String getDescriptions() {
+        if (this == XXS) {
+            return "Детский размер";
+        }
+        return "Взрослый размер";
+    }
+    public int getEuroSize() {
+        return euroSize;
     }
 }
