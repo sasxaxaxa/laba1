@@ -1,7 +1,6 @@
 package pack.lab5.Shape;
 
 import java.awt.*;
-import java.awt.event.*;
 import java.util.Random;
 import javax.swing.*;
 
@@ -9,7 +8,6 @@ class Draw extends JFrame {
     int WINDOW_WIDTH = 600;
     int WINDOW_HEIGHT = 600;
 
-    // Init
     Draw() {
         super("Random shapes");
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
