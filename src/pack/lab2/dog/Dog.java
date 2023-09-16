@@ -1,5 +1,5 @@
 package pack.lab2.dog;
-import java.util.ArrayList;
+
 class Dog {
     private String name;
     private int age;

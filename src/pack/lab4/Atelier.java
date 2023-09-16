@@ -44,6 +44,7 @@ class Atelier {
         void dressWomen();
     }
 }
+
 abstract class Clothes {
     private String size;
     private double cost;
