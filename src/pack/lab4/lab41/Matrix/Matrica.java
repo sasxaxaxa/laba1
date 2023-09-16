@@ -1,6 +1,4 @@
-package pack.lab41.Matrix;
-
-import java.util.Scanner;
+package pack.lab4.lab41.Matrix;
 
 public class Matrica {
     public int n;

@@ -1,4 +1,4 @@
-package pack.lab41.Shape1;
+package pack.lab4.lab41.Shape1;
 
 
 import java.util.*;

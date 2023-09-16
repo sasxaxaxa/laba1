@@ -10,7 +10,7 @@ public class Seasons {
             case FALL -> System.out.println("осень");
         }
     }
-    public void getDescription(Season season) {
+    void getDescription(Season season) {
         switch (season) {
             case WINTER, FALL, SPRING -> System.out.println("Холодное время года");
             case SUMMER -> System.out.println("Теплое время года");

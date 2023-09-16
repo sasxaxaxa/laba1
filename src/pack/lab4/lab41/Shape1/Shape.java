@@ -1,4 +1,4 @@
-package pack.lab41.Shape1;
+package pack.lab4.lab41.Shape1;
 
 abstract class Shape {
     private String type;

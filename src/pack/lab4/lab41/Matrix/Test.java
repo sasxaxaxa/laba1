@@ -1,4 +1,4 @@
-package pack.lab41.Matrix;
+package pack.lab4.lab41.Matrix;
 
 import java.util.Scanner;
 

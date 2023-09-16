@@ -52,11 +52,11 @@ public class Shop {
         switch (ans) {
             case "usd":
                 double usd = conv.getUsd();
-                System.out.printf("Товар %s под номером %d, стоимость в RUB: %d, стоимость в USD: %.2f", product.getName(), choose+1, product.getPrice(), conv.getUsd()*product.getPrice());
+                System.out.printf("Товар %s под номером %d, стоимость в USD: %d, стоимость в RUB: %.2f", product.getName(), choose+1, product.getPrice(), conv.getUsd()*product.getPrice());
                 break;
             case "eur":
                 double eur = conv.getEur();
-                System.out.printf("Товар %s под номером %d, стоимость в RUB: %d, стоимость в EUR: %.2f", product.getName(), choose+1, product.getPrice(), conv.getUsd()*product.getPrice());
+                System.out.printf("Товар %s под номером %d, стоимость в EUR: %d, стоимость в RUB: %.2f", product.getName(), choose+1, product.getPrice(), conv.getUsd()*product.getPrice());
                 break;
         }
     }

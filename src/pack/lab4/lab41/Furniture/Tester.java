@@ -1,4 +1,4 @@
-package pack.lab41.Furniture;
+package pack.lab4.lab41.Furniture;
 
 import java.util.ArrayList;
 
