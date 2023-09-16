@@ -1,6 +1,6 @@
 package pack.lab41.Shape1;
 
-public class Shape {
+abstract class Shape {
     private String type;
     private double area;
     private double perimetr;
