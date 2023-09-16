@@ -1,11 +1,9 @@
 package pack.lab5.Soccer;
 
 
-import pack.lab3.lab3example.JavaMathExample1;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseListener;
 
 public class Soccer extends JFrame {
 
