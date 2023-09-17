@@ -18,7 +18,6 @@ class Image extends JFrame{
     }
     public void paint(Graphics g2) {
         Graphics2D g = (Graphics2D) g2;
-        String filename = "src/1.jpg";
         BufferedImage image = null;
         try {
             image = ImageIO.read(new File("src/pack/lab5/Image/1.jpg"));
@@ -30,6 +29,7 @@ class Image extends JFrame{
     }
 
     public static void main(String[] args) {
+
         Image image = new Image();
     }
 
