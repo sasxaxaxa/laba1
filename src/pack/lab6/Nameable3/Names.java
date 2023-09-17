@@ -1,7 +1,5 @@
 package pack.lab6.Nameable3;
 
-import pack.lab2.ball.Ball;
-
 import java.util.ArrayList;
 
 public class Names {

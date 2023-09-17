@@ -1,4 +1,4 @@
-package pack.lab6;
+package pack.lab6.Movable12;
 
 public interface Movable {
     public void moveUp();
