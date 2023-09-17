@@ -8,27 +8,23 @@ interface Shop {
 
 }
 
-enum Computer{
+enum Computer implements Shop{
     HP("Intel Core i3", 2, 3),
     ASUS("AMD Ryzen 7", 4, 5),
     HONOR("Intel i7", 7, 8);
 
-    private String Processor;
-    private int Memory;
-    private int Monitor;
+    private String processor;
+    private int memory;
+    private int monitor;
 
     Computer(String processor, int memory, int monitor) {
-        Processor = processor;
-        Memory = memory;
-        Monitor = monitor;
+        this.processor = processor;
+        this.memory = memory;
+        this.monitor = monitor;
     }
-    public int getMemory() {
-        return Memory;
-    }
-    public int getMonitor() {
-        return Monitor;
-    }
-    public String getProcessor() {
-        return Processor;
+
+    @Override
+    public void print() {
+        System.out.printf("Модель %s, память: %d, монитор: %d\n", processor, memory, monitor);
     }
 }
