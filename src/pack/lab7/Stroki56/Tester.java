@@ -1,9 +1,9 @@
-package pack.lab7.Stroki;
+package pack.lab7.Stroki56;
 
 
 public class Tester {
     public static void main(String[] args) {
-        Stroka stroki = new Stroki();
+        Stroka stroki = new ProcessStrings();
 
         String s = "AaBbCcDd112233";
 

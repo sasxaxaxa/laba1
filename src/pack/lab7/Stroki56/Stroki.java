@@ -1,4 +1,4 @@
-package pack.lab7.Stroki;
+package pack.lab7.Stroki56;
 
 interface Stroka {
     int lenStr(String s);
@@ -9,7 +9,7 @@ interface Stroka {
 
 
 
-class Stroki implements Stroka {
+class ProcessStrings implements Stroka {
 
     @Override
     public int lenStr(String s) {
