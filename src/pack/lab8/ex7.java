@@ -12,7 +12,6 @@ public class ex7 {
     }
 
     public static void main(String[] args) {
-        int num = 36;
         int del = 1;
         for (int i = 2; i < 37; i++) {
             System.out.printf("Число %d, делители: ", i);
