@@ -19,9 +19,20 @@ public class SlideShow {
 
         public Slides() throws IOException {
             slides = new BufferedImage[]{
-                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\Image\\1.jpg")),
-                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\Soccer\\1.jpeg")),
-                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\Soccer\\2.jpeg"))
+
+
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img1.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img2.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img3.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img4.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img5.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img6.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img7.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img8.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img9.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img10.jpg")),
+                    ImageIO.read(new File("C:\\Users\\simsa\\IdeaProjects\\laba1\\src\\pack\\lab5\\slide_show\\pictures\\img11.jpg"))
+
             };
         }
 
@@ -57,7 +68,7 @@ public class SlideShow {
                             frame.pack();
                             frame.setSize(200, 200);
                             try {
-                                Thread.sleep(1000);
+                                Thread.sleep(400);
                             } catch (InterruptedException e) {
                                 throw new RuntimeException(e);
                             }
