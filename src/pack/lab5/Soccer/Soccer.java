@@ -1,7 +1,6 @@
 package pack.lab5.Soccer;
 
 
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -28,55 +27,50 @@ public class Soccer extends JFrame {
         panel.setBackground(Color.GRAY);
 // задали свойство панели размеры
         panel.setPreferredSize(new Dimension(500, 500));
-        JButton ACMilanButton = new JButton("AC Milan");
-        JButton realMadridButton = new JButton("Real Madrid");
+        JButton btnMilan = new JButton("AC Milan");
+        JButton btnMadrid = new JButton("Real Madrid");
 
         int last = 0;
         String winner = "NO";
 
-        JLabel lastScoreLabel = new JLabel("Last Score: " + last, JLabel.CENTER);
-        JLabel resLabel = new JLabel("Result: " + mil + " X " + rea, JLabel.CENTER);
-        JLabel winLabel = new JLabel("Winner: " + winner, JLabel.CENTER);
+        JLabel lblScore = new JLabel("Last Score: " + last, JLabel.CENTER);
+        JLabel lblResult = new JLabel("Result: " + mil + " X " + rea, JLabel.CENTER);
+        JLabel lblWinner = new JLabel("Winner: " + winner, JLabel.CENTER);
 
 
-        panel.add(ACMilanButton);
-        panel.add(realMadridButton);
-        panel.add(lastScoreLabel);
-        panel.add(resLabel);
-        panel.add(winLabel);
-
+        panel.add(btnMilan);
+        panel.add(btnMadrid);
+        panel.add(lblScore);
+        panel.add(lblResult);
+        panel.add(lblWinner);
 
 //добавили панель к фрейму
         frame.getContentPane().add(panel);
         frame.pack();
         frame.setVisible(true);
-        ACMilanButton.addActionListener(e -> {
+        btnMilan.addActionListener(e -> {
             mil++;
-            lastScoreLabel.setText("Last: AC Milian");
-            resLabel.setText("Result: " + mil + " X " + rea);
-            if (rea > mil)
-                winLabel.setText("Winner " + "Real Madrid");
-            else if (mil < rea)
-                winLabel.setText("Winner " + "AC Milan");
-            else
-                winLabel.setText("DRAW");
+            lblScore.setText("Last: AC Milian");
+            madrid(lblResult, lblWinner);
         });
-        realMadridButton.addActionListener(e -> {
+        btnMadrid.addActionListener(e -> {
             rea++;
-            lastScoreLabel.setText("Last: Real Madrid");
-            resLabel.setText("Result: " + mil + " X " + rea);
-            if (rea > mil)
-                winLabel.setText("Winner " + "Real Madrid");
-            else if (mil < rea)
-                winLabel.setText("Winner " + "AC Milan");
-            else
-                winLabel.setText("DRAW");
-
+            lblScore.setText("Last: Real Madrid");
+            madrid(lblResult, lblWinner);
         });
-
-
-
     }
+
+    private void madrid(JLabel resLabel, JLabel winLabel) {
+        resLabel.setText("Result: " + mil + " X " + rea);
+        if (rea > mil) {
+            winLabel.setText("Winner " + "Real Madrid");
+        } else if (mil < rea) {
+            winLabel.setText("Winner " + "AC Milan");
+        } else {
+            winLabel.setText("DRAW");
+        }
+    }
+
     public static void main(String[] args) {
         new Soccer();
     }

@@ -10,12 +10,14 @@ public class Seasons {
             case FALL -> System.out.println("осень");
         }
     }
+
     void getDescription(Season season) {
         switch (season) {
             case WINTER, FALL, SPRING -> System.out.println("Холодное время года");
             case SUMMER -> System.out.println("Теплое время года");
         }
     }
+
     public static void main(String[] args) {
         Season winter = Season.WINTER;
 
@@ -23,13 +25,14 @@ public class Seasons {
         enumSeasons.TheBestSeason(winter);
         enumSeasons.getDescription(winter);
         System.out.println("Все времена года:");
-        for (Season season :Season.values()) {
+        for (Season season : Season.values()) {
 
             System.out.printf("Время года: %s, средняя температура: %d\n", season, season.getTemp());
 
         }
     }
 }
+
 enum Season {
     WINTER(-20),
     SPRING(8),
@@ -40,6 +43,7 @@ enum Season {
     Season(int Temp) {
         this.Temp = Temp;
     }
+
     public int getTemp() {
         return Temp;
     }
