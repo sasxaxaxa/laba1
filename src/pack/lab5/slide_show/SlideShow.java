@@ -78,7 +78,7 @@ public class SlideShow {
             }
 
             frame.setBackground(Color.BLACK);
-            frame.setLocation(200, 200);
+            frame.setLocation(1000, 300);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
         } catch (Exception e) {
