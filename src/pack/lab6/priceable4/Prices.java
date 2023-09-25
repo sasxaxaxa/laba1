@@ -1,4 +1,4 @@
-package pack.lab6.priceable;
+package pack.lab6.priceable4;
 
 import java.util.ArrayList;
 

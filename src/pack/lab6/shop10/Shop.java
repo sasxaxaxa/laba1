@@ -4,7 +4,6 @@ interface Shop {
     void print();
 
 }
-
 enum Computer implements Shop{
     HP("Intel Core i3", 2, 3),
     ASUS("AMD Ryzen 7", 4, 5),
