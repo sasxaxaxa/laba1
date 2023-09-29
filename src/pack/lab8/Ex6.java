@@ -1,8 +1,8 @@
 package pack.lab8;
 
-public class ex6 {
+public class Ex6 {
     public static boolean recursion(int num, int del) {
-        if(del == num){
+        if (del == num) {
             return true;
         }
         if (num % del == 0) {
@@ -15,8 +15,7 @@ public class ex6 {
         for (int i = 2; i < 34; i++) {
             if (recursion(i, 2)) {
                 System.out.printf("Число %d простое\n", i);
-            }
-            else {
+            } else {
                 System.out.printf("Число %d сложное\n", i);
             }
         }

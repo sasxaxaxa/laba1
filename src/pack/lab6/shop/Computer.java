@@ -2,10 +2,10 @@ package pack.lab6.shop;
 
 
 public class Computer {
-    private Brand brand;
-    private Processor processor;
-    private Memory memory;
-    private Monitor monitor;
+    private final Brand brand;
+    private final Processor processor;
+    private final Memory memory;
+    private final Monitor monitor;
 
     public Computer(Brand brand, Processor processor, Memory memory, Monitor monitor) {
         this.brand = brand;
@@ -30,10 +30,13 @@ public class Computer {
         return monitor;
     }
 
+    @Override
     public String toString() {
-        return "Brand: " + brand +
-                "\nProcessor: " + processor +
-                "\nMemory: " + memory +
-                "\nMonitor: " + monitor;
+        return "Computer{" +
+                "brand=" + brand +
+                ", processor=" + processor +
+                ", memory=" + memory +
+                ", monitor=" + monitor +
+                '}';
     }
 }

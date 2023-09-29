@@ -1,10 +1,11 @@
 package pack.lab6.nameable3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Names {
     public static void main(String[] args) {
-        final ArrayList<Nameable> names = new ArrayList<>();
+        final List<Nameable> names = new ArrayList<>();
 
         Planet saturn = new Planet("Saturn");
         Planet earth = new Planet("Earth");
@@ -24,7 +25,7 @@ public class Names {
         names.add(car);
 
         for (Nameable nameable : names) {
-            System.out.println(nameable.toString());
+            System.out.println(nameable);
             System.out.println(nameable.name());
         }
 

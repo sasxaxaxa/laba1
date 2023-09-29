@@ -1,13 +1,13 @@
 package pack.lab6.movable12;
 
 public interface Movable {
-    public void moveUp();
+    void moveUp();
 
-    public void moveDown();
+    void moveDown();
 
-    public void moveLeft();
+    void moveLeft();
 
-    public void moveRight();
+    void moveRight();
 }
 
 class MovablePoint implements Movable {
@@ -84,11 +84,7 @@ class MovableRectangle implements Movable {
     private MovablePoint bottomRight;
 
     boolean movableRectangle(int x1, int x2, int y1, int y2, int xSpeed, int ySpeed) {
-        if (xSpeed == ySpeed) {
-            return true;
-        } else {
-            return false;
-        }
+        return xSpeed == ySpeed;
     }
 
     @Override

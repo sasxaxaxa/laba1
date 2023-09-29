@@ -1,8 +1,8 @@
 package pack.lab6.shop;
 
 public class Memory {
-    private int capacity;
-    private int speed;
+    private final int capacity;
+    private final int speed;
 
     public Memory(int capacity, int speed) {
         this.capacity = capacity;

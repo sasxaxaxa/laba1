@@ -1,4 +1,4 @@
-package pack.lab7.Printable78;
+package pack.lab7.printable_78;
 
 import java.util.ArrayList;
 
@@ -23,6 +23,7 @@ public class Tester {
         printBooks(array);
 
     }
+
     public static void printMagazines(ArrayList<Printable> printables) {
         for (Printable printable : printables) {
             if (printable instanceof Magazine) {

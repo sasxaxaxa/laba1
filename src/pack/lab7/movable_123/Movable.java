@@ -1,18 +1,24 @@
-package pack.lab7.Movable123;
+package pack.lab7.movable_123;
 
 public interface Movable {
-    public void moveUp();
-    public void moveDown();
-    public void moveLeft();
-    public void moveRight();
+    void moveUp();
+
+    void moveDown();
+
+    void moveLeft();
+
+    void moveRight();
 }
+
 class MovablePoint implements Movable {
-    private  int x;
+    private int x;
     private int y;
     private int xSpeed;
     private int ySpeed;
+
     MovablePoint(int x, int y, int xSpeed, int ySpeed) {
     }
+
     @Override
     public String toString() {
         return "MovablePoint{" +
@@ -22,6 +28,7 @@ class MovablePoint implements Movable {
                 ", ySpeed=" + ySpeed +
                 '}';
     }
+
     @Override
     public void moveUp() {
 
@@ -42,6 +49,7 @@ class MovablePoint implements Movable {
 
     }
 }
+
 class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
@@ -49,6 +57,7 @@ class MovableCircle implements Movable {
     MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
 
     }
+
     @Override
     public String toString() {
         return "MovableCircle{" +
@@ -79,8 +88,8 @@ class MovableCircle implements Movable {
 }
 
 class MovableRectangle implements Movable {
-    private MovablePoint topleft;
-    private MovablePoint bottomRight;
+    private final MovablePoint topleft;
+    private final MovablePoint bottomRight;
 
     public MovableRectangle(MovablePoint topleft, MovablePoint bottomRight) {
         this.topleft = topleft;
@@ -88,13 +97,9 @@ class MovableRectangle implements Movable {
     }
 
     boolean SpeedTest(int x1, int x2, int y1, int y2, int xSpeed, int ySpeed) {
-        if (xSpeed == ySpeed) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return xSpeed == ySpeed;
     }
+
     @Override
     public String toString() {
         return "MovableRectangle{" +

@@ -2,30 +2,35 @@ package pack.lab6.convertable;
 
 interface Convertable {
     void convert();
+
+
+    class ToCels implements Convertable {
+        private final Double kel;
+
+        public ToCels(Double kel) {
+            this.kel = kel;
+        }
+
+        @Override
+        public void convert() {
+            System.out.printf("%.2f Кельвинов = %.2f градусов Цельсия\n", kel, kel - 273.15);
+        }
+    }
+
+    class ToKel implements Convertable {
+        private final Double cels;
+
+        public ToKel(Double cels) {
+            this.cels = cels;
+        }
+
+        @Override
+        public void convert() {
+            System.out.printf("%.2f градусов Цельсия = %.2f Кельвинов\n", cels, cels + 273.15);
+        }
+    }
+
 }
 
-class toCels implements Convertable{
-    private Double kel;
 
-    public toCels(Double kel) {
-        this.kel = kel;
-    }
-
-    @Override
-    public void convert() {
-        System.out.printf("%.2f Кельвинов = %.2f градусов Цельсия\n", kel, kel-273.15);
-    }
-}
-
-class toKel implements Convertable{
-    private Double cels;
-    public toKel(Double cels) {
-        this.cels = cels;
-    }
-
-    @Override
-    public void convert() {
-        System.out.printf("%.2f градусов Цельсия = %.2f Кельвинов\n", cels, cels+273.15);
-    }
-}
 

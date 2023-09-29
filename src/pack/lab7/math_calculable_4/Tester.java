@@ -1,4 +1,4 @@
-package pack.lab7.MathCalculable4;
+package pack.lab7.math_calculable_4;
 
 import java.util.Scanner;
 

@@ -2,8 +2,8 @@ package pack.lab6.shop;
 
 
 public class Monitor {
-    private String name;
-    private double size;
+    private final String name;
+    private final double size;
 
     public Monitor(String name, double size) {
         this.name = name;

@@ -1,4 +1,4 @@
-package pack.lab7.Stroki56;
+package pack.lab7.stroki_56;
 
 
 public class Tester {

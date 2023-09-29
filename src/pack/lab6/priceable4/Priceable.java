@@ -5,44 +5,46 @@ public interface Priceable {
 }
 
 class Computer implements Priceable {
-    private Double price;
-    private String model;
+    private final Double price;
+    private final String model;
+
     public Computer(String model, Double price) {
         this.price = price;
         this.model = model;
     }
+
     @Override
     public String getPrice() {
-        Double.toString(price);
         return model + " " + price + "$";
     }
 }
 
 class Smartphone implements Priceable {
-    private Double price;
-    private String model;
+    private final Double price;
+    private final String model;
 
     public Smartphone(String model, Double price) {
         this.price = price;
         this.model = model;
     }
+
     @Override
     public String getPrice() {
-        Double.toString(price);
         return model + " " + price + "$";
     }
 }
 
 class TV implements Priceable {
-    private String model;
-    private Double price;
+    private final String model;
+    private final Double price;
+
     public TV(String model, Double price) {
         this.price = price;
         this.model = model;
     }
+
     @Override
     public String getPrice() {
-        Double.toString(price);
         return model + " " + price + "$";
     }
 }

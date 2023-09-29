@@ -4,14 +4,15 @@ interface Shop {
     void print();
 
 }
-enum Computer implements Shop{
+
+enum Computer implements Shop {
     HP("Intel Core i3", 2, 3),
     ASUS("AMD Ryzen 7", 4, 5),
     HONOR("Intel i7", 7, 8);
 
-    private String processor;
-    private int memory;
-    private int monitor;
+    private final String processor;
+    private final int memory;
+    private final int monitor;
 
     Computer(String processor, int memory, int monitor) {
         this.processor = processor;

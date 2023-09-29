@@ -2,22 +2,21 @@ package pack.lab8;
 
 import java.util.Scanner;
 
-public class ex3 {
+public class Ex3 {
     public static void recursion(int a, int b) {
         if (a < b) {
             for (int i = a; i <= b; i++) {
                 System.out.print(i + " ");
             }
-        }
-        else if (a > b) {
+        } else if (a > b) {
             for (int i = a; i >= b; i--) {
                 System.out.print(i + " ");
             }
-        }
-        else {
+        } else {
             System.out.println("Числа равны");
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a");

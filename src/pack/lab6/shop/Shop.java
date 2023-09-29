@@ -1,15 +1,15 @@
 package pack.lab6.shop;
 
-import java.util.ArrayList;
+import java.util.Collection;
 
 enum Brand {
     HP, HONOR, HUAWEI, DELL, ASUS, LENOVO, ACER
 }
 
 public class Shop {
-    private ArrayList<Computer> computers;
+    private final Collection<Computer> computers;
 
-    public Shop(ArrayList<Computer> computers) {
+    public Shop(Collection<Computer> computers) {
         this.computers = computers;
     }
 

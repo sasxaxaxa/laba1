@@ -2,25 +2,25 @@ package pack.lab8;
 
 import java.util.Scanner;
 
-public class ex4 {
-    public static int sum(int summ, int num){
+public class Ex4 {
+    public static int sum(int summ, int num) {
         if (num == 0) {
             return summ;
-        }
-        else {
+        } else {
             summ += summ + num % 10;
-            return sum(summ, num/10);
+            return sum(summ, num / 10);
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int k = sc.nextInt();
         int s = sc.nextInt();
         int summ = 0;
         int check = 0;
-        for(int i = (int) Math.pow(10, k); i < Math.pow(10, k + 1); i++){
+        for (int i = (int) Math.pow(10, k); i < Math.pow(10, k + 1); i++) {
             sum(summ, i);
-            if(summ == s){
+            if (summ == s) {
                 check++;
             }
         }

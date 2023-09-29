@@ -1,8 +1,8 @@
 package pack.lab6.shop;
 
 public class Processor {
-    private String model;
-    private double frequency;
+    private final String model;
+    private final double frequency;
 
     public Processor(String model, double frequency) {
         this.model = model;

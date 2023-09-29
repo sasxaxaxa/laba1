@@ -5,9 +5,9 @@ public interface Printable {
 }
 
 class Book implements Printable {
-    private String name;
-    private String author;
-    private Integer year;
+    private final String name;
+    private final String author;
+    private final Integer year;
 
     public Book(String name, String author, Integer year) {
         this.name = name;
@@ -22,9 +22,9 @@ class Book implements Printable {
 }
 
 class Magazine implements Printable {
-    private String name;
-    private String company;
-    private Integer price;
+    private final String name;
+    private final String company;
+    private final Integer price;
 
     public Magazine(String name, String company, Integer price) {
         this.name = name;
@@ -38,10 +38,11 @@ class Magazine implements Printable {
 
     }
 }
+
 class Shop implements Printable {
-    private String name;
-    private String type;
-    private String shedule;
+    private final String name;
+    private final String type;
+    private final String shedule;
 
     public Shop(String name, String type, String shedule) {
         this.name = name;

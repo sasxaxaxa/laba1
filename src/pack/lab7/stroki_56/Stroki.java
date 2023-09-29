@@ -1,12 +1,14 @@
-package pack.lab7.Stroki56;
+package pack.lab7.stroki_56;
 
 interface Stroka {
     int lenStr(String s);
+
     String StrNechet(String s);
+
     String StrChet(String s);
+
     String ReverseStr(String s);
 }
-
 
 
 class ProcessStrings implements Stroka {
