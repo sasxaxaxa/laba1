@@ -18,7 +18,6 @@ public final class Input implements AutoCloseable {
         }
         return this;
     }
-
     @Override
     public void close() throws Exception {
         stream.close();
