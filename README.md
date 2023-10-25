@@ -1,5 +1,4 @@
 # labaJava
-пилю лабы не потому что нравится, а потому что хочу автомат()
-<h1 align="center">try....<a href="https://vk.com/sasxaxaxa" target="_blank">111</a> 
+<h1 align="center">Привет, дружище! Меня зовут <a href="https://vk.com/sasxaxaxa" target="_blank">саша</a> 
 <!-- <img src="" height="32"/></h1> -->
 <h3 align="center"></h3>
