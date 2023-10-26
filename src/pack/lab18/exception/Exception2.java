@@ -1,4 +1,4 @@
-package pack.lab18;
+package pack.lab18.exception;
 
 import java.util.Scanner;
 

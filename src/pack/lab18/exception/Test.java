@@ -1,4 +1,4 @@
-package pack.lab18;
+package pack.lab18.exception;
 
 public class Test {
     public static void main(String[] args) {

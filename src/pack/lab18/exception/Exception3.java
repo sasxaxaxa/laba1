@@ -1,4 +1,4 @@
-package pack.lab18;
+package pack.lab18.exception;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class Exception3 {
             int i = Integer.parseInt(intString);
             System.out.println(2 / i);
         } catch (NumberFormatException e) {
-            System.out.println("Not correct number");
+            System.out.println("Wrong type");
         } catch (Exception e) {
             System.out.println("Exception");
         }
