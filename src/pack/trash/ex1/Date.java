@@ -1,4 +1,4 @@
-package pack.lab11.ex1;
+package pack.trash.ex1;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package pack.lab11;
+package pack.trash;
 
 import java.util.Calendar;
 

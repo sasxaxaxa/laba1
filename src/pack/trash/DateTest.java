@@ -1,4 +1,4 @@
-package pack.lab11;
+package pack.trash;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 public class DateTest {
