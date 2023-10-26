@@ -13,12 +13,12 @@ public class Exception3 {
         } catch (NumberFormatException e) {
             System.out.println("Not correct number");
         } catch (Exception e) {
-            System.out.println("Exception happened!");
+            System.out.println("Exception");
         }
     }
 
     public static void main(String[] args) {
-        Exception2 e2 = new Exception2();
+        Exception3 e2 = new Exception3();
         e2.exceptionDemo();
     }
 }
