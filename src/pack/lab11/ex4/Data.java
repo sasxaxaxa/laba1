@@ -36,6 +36,6 @@ public class Data {
         System.out.println("Объект Date: " + date);
         System.out.println("Объект Calendar: " + calendar.getTime());
 
-        sc.close();
+
     }
 }
