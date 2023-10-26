@@ -4,26 +4,26 @@ import java.util.*;
 
 public class Data {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
 
         System.out.print("Введите год: ");
-        int year = scanner.nextInt();
+        int year = sc.nextInt();
 
         System.out.print("Введите месяц (от 1 до 12): ");
-        int month = scanner.nextInt() - 1;
+        int month = sc.nextInt() - 1;
 
         System.out.print("Введите число: ");
-        int dayOfMonth = scanner.nextInt();
+        int dayOfMonth = sc.nextInt();
 
         System.out.print("Введите часы (от 0 до 23): ");
-        int hours = scanner.nextInt();
+        int hours = sc.nextInt();
 
         System.out.print("Введите минуты (от 0 до 59): ");
-        int minutes = scanner.nextInt();
+        int minutes = sc.nextInt();
 
         System.out.print("Введите секунды (от 0 до 59): ");
-        int second = scanner.nextInt();
+        int second = sc.nextInt();
 
 
         Date date = new Date(year - 1900, month, dayOfMonth, hours, minutes, second);
@@ -35,5 +35,7 @@ public class Data {
 
         System.out.println("Объект Date: " + date);
         System.out.println("Объект Calendar: " + calendar.getTime());
+
+        sc.close();
     }
 }
