@@ -4,8 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Student {
-    private String name;
-    private Date birthday;
+    private final String name;
+    private final Date birthday;
 
     public Student(String name, Date birthday) {
         this.name = name;

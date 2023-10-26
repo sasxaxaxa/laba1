@@ -3,7 +3,6 @@ package pack.lab5.shape;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
 import java.util.Random;
 
 class Draw extends JFrame {
@@ -38,7 +37,7 @@ class Draw extends JFrame {
         return b;
     }
 
-    private static void random_shapes_paint(int shapes, Graphics2D g, int width, int height ) {
+    private static void random_shapes_paint(int shapes, Graphics2D g, int width, int height) {
         for (int i = 0; i < shapes; i++) {
             Random rand = new Random();
             float cr = rand.nextFloat();

@@ -1,6 +1,7 @@
 package pack.lab2.dog;
-import java.util.Scanner;
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class DogArray {
     public static void main(String[] args) {

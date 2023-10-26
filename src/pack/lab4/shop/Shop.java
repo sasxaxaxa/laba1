@@ -7,19 +7,23 @@ import java.util.Scanner;
 public class Shop {
 
     public static class Enter {
-        private String login;
-        private String password;
-        public String getPassword () {
+        private final String login;
+        private final String password;
+
+        public String getPassword() {
             return password;
         }
-        public String getLogin () {
+
+        public String getLogin() {
             return login;
         }
+
         public Enter(String login, String password) {
             this.login = login;
             this.password = password;
         }
     }
+
     public static boolean Enter() {
         System.out.println("Добро пожаловать в магазин!\nЗарегистрируйтесь в системе.\nВведите логин:");
         Scanner sc = new Scanner(System.in);
@@ -33,17 +37,15 @@ public class Shop {
         if (!login_enter.equals(enter.getLogin())) {
             System.out.printf("Пользователь с логином '%s' не найден\n", login_enter);
             return false;
-        }
-        else {
+        } else {
             System.out.println("Введите пароль:");
             String password_enter = sc.nextLine();
             if (!password_enter.equals(enter.getPassword())) {
                 for (int i = 0; i < 3; i++) {
                     if (i == 2) {
-                        System.out.printf("Вы ввели неверный пароль. У вас осталось %d попытка\n", 3-i);
-                    }
-                    else {
-                        System.out.printf("Вы ввели неверный пароль. У вас осталось %d попытки\n", 3-i);
+                        System.out.printf("Вы ввели неверный пароль. У вас осталось %d попытка\n", 3 - i);
+                    } else {
+                        System.out.printf("Вы ввели неверный пароль. У вас осталось %d попытки\n", 3 - i);
                     }
                     password_enter = sc.nextLine();
                     if ((password_enter.equals(enter.getPassword()))) {
@@ -84,6 +86,7 @@ public class Shop {
         }
         return money;
     }
+
     public static int AddLaptopToCard() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите товары для добавления в корзину. Для окончания выбора нажмите 0\n");
@@ -108,6 +111,7 @@ public class Shop {
         System.out.printf("Сумма покупки: %d\n", sum);
         return sum;
     }
+
     public static int AddSmartphoneToCard() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите товары для добавления в корзину. Для окончания выбора нажмите 0\n");
@@ -132,6 +136,7 @@ public class Shop {
         System.out.printf("Сумма покупки: %d\n", sum);
         return sum;
     }
+
     public static void Buy(int price) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите количество денег для оплаты.");
@@ -140,18 +145,18 @@ public class Shop {
             System.out.println("Недостаточно денег для оплаты.");
         } else {
             System.out.println("Отправляем код для оплаты!");
-            int code = (int) (1000 + Math.random()*(9999-1000));
+            int code = (int) (1000 + Math.random() * (9999 - 1000));
             System.out.printf("Ваш код: %s. Никому его не сообщайте!\nВведите код в строку ниже:\n", code);
             int code1 = sc.nextInt();
             if (code == code1) {
                 System.out.println("Поздравляем! Покупка совершена.");
                 System.out.println("Сдача: " + (money - price));
-            }
-            else {
+            } else {
                 System.out.println("Покупка не совершена. Вы ввели неверный код.");
             }
         }
     }
+
     public static void main(String[] args) {
         if (Enter()) {
             Scanner sc = new Scanner(System.in);
@@ -159,25 +164,28 @@ public class Shop {
             String num = sc.nextLine().toUpperCase();
             int money = Catalog(num);
             Buy(money);
-        }
-        else {
+        } else {
             System.out.println("Магазин закрыт. До свидания.");
         }
     }
 }
+
 enum Laptops {
     ASUS(100),
     HP(77),
     HONOR(80),
     HUAWEI(90);
 
-    private int price;
-    private Laptops(int price) {
+    private final int price;
+
+    Laptops(int price) {
         this.price = price;
     }
+
     public int getPrice() {
         return price;
     }
+
     public void getDescription() {
         switch (this) {
             case ASUS -> System.out.println("Это самый дорогой ноутбук.");
@@ -186,19 +194,23 @@ enum Laptops {
         }
     }
 }
+
 enum Smartphones {
     APPLE(200),
     SAMSUNG(100),
     XIAOMI(75),
     REALME(50);
 
-    private int price;
-    private Smartphones(int price) {
+    private final int price;
+
+    Smartphones(int price) {
         this.price = price;
     }
+
     public int getPrice() {
         return price;
     }
+
     public void getDescription() {
         switch (this) {
             case APPLE -> System.out.println("Это самый дорогой смартфон.");

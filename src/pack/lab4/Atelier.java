@@ -49,9 +49,9 @@ class Atelier {
 }
 
 abstract class Clothes {
-    private String size;
-    private double cost;
-    private String color;
+    private final String size;
+    private final double cost;
+    private final String color;
 
     public Clothes(String size, double cost, String color) {
         this.size = size;
@@ -74,17 +74,11 @@ abstract class Clothes {
     public void getDescription() {
     }
 
-    ;
-
     public void dressMan() {
     }
 
-    ;
-
     public void dressWomen() {
     }
-
-    ;
 
 }
 
@@ -170,9 +164,9 @@ enum ClothingSize {
     M(38),
     L(40);
 
-    private int euroSize;
+    private final int euroSize;
 
-    private ClothingSize(int euroSize) {
+    ClothingSize(int euroSize) {
         this.euroSize = euroSize;
     }
 

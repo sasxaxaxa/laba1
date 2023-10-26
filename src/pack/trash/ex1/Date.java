@@ -1,13 +1,14 @@
 package pack.trash.ex1;
 
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.Calendar;
 
 
 class Programmer {
-    private String name;
-    private Calendar calendar1;
-    private Calendar calendar2;
+    private final String name;
+    private final Calendar calendar1;
+    private final Calendar calendar2;
+
     public Programmer(String name, Calendar calendar1, Calendar calendar2) {
         this.name = name;
         this.calendar1 = calendar1;
@@ -23,20 +24,21 @@ class Programmer {
                 '}';
     }
 }
+
 class Date {
     public static void main(String[] args) {
         ArrayList<Programmer> array = new ArrayList<>();
         Calendar calendar1 = Calendar.getInstance();
 
-        calendar1.set(Calendar.YEAR,2023);
-        calendar1.set(Calendar.MONTH,8);
-        calendar1.set(Calendar.DAY_OF_MONTH,1);
+        calendar1.set(Calendar.YEAR, 2023);
+        calendar1.set(Calendar.MONTH, 8);
+        calendar1.set(Calendar.DAY_OF_MONTH, 1);
 
         Calendar calendar2 = Calendar.getInstance();
 
-        calendar2.set(Calendar.YEAR,2023);
-        calendar2.set(Calendar.MONTH,8);
-        calendar2.set(Calendar.DAY_OF_MONTH,30);
+        calendar2.set(Calendar.YEAR, 2023);
+        calendar2.set(Calendar.MONTH, 8);
+        calendar2.set(Calendar.DAY_OF_MONTH, 30);
 
 
         Programmer programmer1 = new Programmer("aaa", calendar1, calendar2);

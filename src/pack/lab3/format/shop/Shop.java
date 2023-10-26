@@ -1,16 +1,17 @@
 package pack.lab3.format.shop;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Shop {
     public static class Convertor {
         double usd = 91.50;
         double eur = 99.30;
+
         public double getEur() {
             return eur;
         }
+
         public double getUsd() {
             return usd;
         }
@@ -36,11 +37,11 @@ public class Shop {
         }
 
         for (Product product : array) {
-            System.out.printf("%d товар: %s, цена: %d\n", array.indexOf(product)+1, product.getName(), product.getPrice()) ;
+            System.out.printf("%d товар: %s, цена: %d\n", array.indexOf(product) + 1, product.getName(), product.getPrice());
         }
 
         System.out.println("Выберите товар");
-        int choose = sc.nextInt()-1;
+        int choose = sc.nextInt() - 1;
         sc.nextLine();
         System.out.println("Выберите валюту для перевода(usd/eur)");
         String ans = sc.nextLine().toLowerCase();
@@ -52,11 +53,11 @@ public class Shop {
         switch (ans) {
             case "usd":
                 double usd = conv.getUsd();
-                System.out.printf("Товар %s под номером %d, стоимость в USD: %d, стоимость в RUB: %.2f", product.getName(), choose+1, product.getPrice(), conv.getUsd()*product.getPrice());
+                System.out.printf("Товар %s под номером %d, стоимость в USD: %d, стоимость в RUB: %.2f", product.getName(), choose + 1, product.getPrice(), conv.getUsd() * product.getPrice());
                 break;
             case "eur":
                 double eur = conv.getEur();
-                System.out.printf("Товар %s под номером %d, стоимость в EUR: %d, стоимость в RUB: %.2f", product.getName(), choose+1, product.getPrice(), conv.getUsd()*product.getPrice());
+                System.out.printf("Товар %s под номером %d, стоимость в EUR: %d, стоимость в RUB: %.2f", product.getName(), choose + 1, product.getPrice(), conv.getUsd() * product.getPrice());
                 break;
         }
     }

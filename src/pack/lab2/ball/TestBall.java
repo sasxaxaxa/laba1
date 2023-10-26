@@ -1,11 +1,12 @@
 package pack.lab2.ball;
+
 import java.util.Scanner;
-import java.lang.*;
+
 public class TestBall {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Ball b1 = new Ball(0.0, 0.0);
-        System.out.println(b1.toString());
+        System.out.println(b1);
         System.out.println("Установите координаты шара:");
         System.out.print("x = ");
         double x = sc.nextDouble();

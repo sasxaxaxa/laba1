@@ -1,8 +1,8 @@
 package pack.lab2.dog;
 
 class Dog {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public Dog(String name, int age) {
         this.name = name;

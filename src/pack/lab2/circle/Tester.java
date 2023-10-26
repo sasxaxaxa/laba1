@@ -1,5 +1,7 @@
 package pack.lab2.circle;
+
 import java.util.Scanner;
+
 public class Tester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +23,6 @@ public class Tester {
                 circle.circleEqual(r, r1);
                 break;
         }
-
 
 
     }

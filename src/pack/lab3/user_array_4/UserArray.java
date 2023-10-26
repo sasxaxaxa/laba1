@@ -1,5 +1,6 @@
 package pack.lab3.user_array_4;
-import java.util.*;
+
+import java.util.Scanner;
 
 
 public class UserArray {
@@ -27,7 +28,7 @@ public class UserArray {
         int[] array_new = new int[c];
         System.out.println("Полученный массив:");
         for (int i = 0; i < n; i++) {
-            System.out.print(array[i]+" ");
+            System.out.print(array[i] + " ");
             if (array[i] % 2 == 0) {
                 array_new[j] = array[i];
                 j++;

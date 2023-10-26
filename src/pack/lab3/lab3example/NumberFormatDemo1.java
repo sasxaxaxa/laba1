@@ -1,5 +1,6 @@
 import java.text.NumberFormat;
 import java.util.Locale;
+
 public class NumberFormatDemo1 {
     public static void main(String[] args) {
         double number = 123.4567;

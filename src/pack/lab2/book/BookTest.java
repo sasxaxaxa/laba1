@@ -1,4 +1,5 @@
 package pack.lab2.book;
+
 import java.util.Scanner;
 
 public class BookTest {

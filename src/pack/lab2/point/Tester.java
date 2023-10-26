@@ -1,15 +1,17 @@
 package pack.lab2.point;
+
 import java.util.Scanner;
 
 
 public class Tester {
-    private Circle[] circles;
+    private final Circle[] circles;
     private int size;
 
     public Tester(int size1) {
         circles = new Circle[size1];
         size = 0;
     }
+
     public void Adder(Circle circle) {
         if (size < circles.length) {
             circles[size] = circle;
@@ -24,7 +26,6 @@ public class Tester {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Tester tester = new Tester(10);
-
 
 
         System.out.println("Would you like to add a circle?\nYes -> 1\nNo -> 0");

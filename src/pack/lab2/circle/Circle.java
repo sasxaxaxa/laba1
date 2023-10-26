@@ -28,8 +28,7 @@ public class Circle {
     public void circleEqual(double r1, double r2) {
         if (r1 == r2) {
             System.out.println("Окружности равны");
-        }
-        else {
+        } else {
             if (r1 > r2) {
                 System.out.println("Первая окружность больше");
             } else {

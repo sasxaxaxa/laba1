@@ -1,12 +1,12 @@
 package pack.lab3.lab3example;
 
-public class JavaMathExample1{
-    public static void main(String[] args){
+public class JavaMathExample1 {
+    public static void main(String[] args) {
         double x = 28;
         double y = 4;
 // вернет maximum из двух чисел
         System.out.println("Maximum number of x and y is: "
-                +Math.max(x, y));
+                + Math.max(x, y));
 // вернет квадратный корень из y
         System.out.println("Square root of y is: " +
                 Math.sqrt(y));
@@ -23,12 +23,12 @@ public class JavaMathExample1{
         System.out.println("log10 of x is: " + Math.log10(x));
         System.out.println("log10 of y is: " + Math.log10(y));
 // вернет log из x + 1
-        System.out.println("log1p of x is: " +Math.log1p(x));
+        System.out.println("log1p of x is: " + Math.log1p(x));
 /* Метод Math.exp() — возвращает натуральный логарифм
 по основанию e и аргументу — показателю степени, где e —
 иррациональная константа, равная приблизительно 2,71828182
 */
-        System.out.println("exp of a is: " +Math.exp(x));
-        System.out.println("expm1 of a is: " +Math.expm1(x));
+        System.out.println("exp of a is: " + Math.exp(x));
+        System.out.println("expm1 of a is: " + Math.expm1(x));
     }
 }

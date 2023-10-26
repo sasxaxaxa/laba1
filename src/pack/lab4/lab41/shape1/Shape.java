@@ -1,7 +1,7 @@
 package pack.lab4.lab41.shape1;
 
 abstract class Shape {
-    private String type;
+    private final String type;
     private double area;
     private double perimetr;
 

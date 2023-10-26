@@ -7,6 +7,7 @@ public class Author {
         this.gender = gender;
 
     }
+
     private String name;
     private String email;
     private char gender;
@@ -18,27 +19,28 @@ public class Author {
     public String getEmail() {
         return email;
     }
+
     public char getGender() {
         return gender;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public void setGender(char gender) {
         this.gender = gender;
     }
-
 
 
     public String toString() {
         return "Author{" + "name = " + name + ", email = " + email +
                 ", gender = " + gender + "}";
     }
-
-
 
 
 }

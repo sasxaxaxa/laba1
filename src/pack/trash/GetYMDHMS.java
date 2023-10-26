@@ -13,7 +13,7 @@ public class GetYMDHMS {
         int second = cal.get(Calendar.SECOND);
 
 
-        System.out.printf("Now is %4d/%02d/%02d %02d:%02d:%02d\n", year, month+1, day, hour, minute, second);
+        System.out.printf("Now is %4d/%02d/%02d %02d:%02d:%02d\n", year, month + 1, day, hour, minute, second);
 
     }
 }

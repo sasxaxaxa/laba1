@@ -23,7 +23,7 @@ public class Sort {
         students[3] = new Student("Dasha", "Barinova", 120);
 
         sort(students);
-        for (int i =0; i<students.length; i++) {
+        for (int i = 0; i < students.length; i++) {
             System.out.printf("%-30s %7d\n", students[i].getFullName(), students[i].getNumber());
         }
     }

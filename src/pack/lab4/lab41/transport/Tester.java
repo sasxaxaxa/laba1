@@ -1,7 +1,5 @@
 package pack.lab4.lab41.transport;
 
-import pack.lab2.shop.Shop;
-
 import java.util.ArrayList;
 
 public class Tester {

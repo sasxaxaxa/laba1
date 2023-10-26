@@ -1,17 +1,19 @@
 package pack.lab2.shop;
 
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Shop {
 
     public void Adder(String device) {
         devices.add(device);
     }
+
     public void Remover(String device) {
 
         devices.remove(device);
     }
+
     public void Searcher(String device) {
         if (devices.contains(device)) {
             System.out.println("Компьютер найден");

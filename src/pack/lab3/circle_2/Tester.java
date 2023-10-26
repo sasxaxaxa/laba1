@@ -1,6 +1,8 @@
 package pack.lab3.circle_2;
 
-import java.util.*;
+import java.util.Random;
+import java.util.Scanner;
+
 public class Tester {
     public static void main(String[] args) {
         CircleArray circlesarray = new CircleArray();

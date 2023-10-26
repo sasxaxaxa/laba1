@@ -5,9 +5,15 @@ public class Circle {
         this.r = r;
         this.point = point;
     }
-    private Point point;
-    private double r;
 
-    public Point getPoint() {return point;}
-    public double getR() {return r;}
+    private final Point point;
+    private final double r;
+
+    public Point getPoint() {
+        return point;
+    }
+
+    public double getR() {
+        return r;
+    }
 }

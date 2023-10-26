@@ -17,6 +17,7 @@ public class Report {
             System.out.printf("Сотрудник: %-15s %15s0 RUB%n", employee.getFullname(), employee.getSalary());
         }
     }
+
     public static void main(String[] args) {
         generateReport();
     }

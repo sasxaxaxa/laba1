@@ -3,7 +3,7 @@ package pack.lab4.lab41.matrix4;
 public class Matrica {
     public int n;
     public int m;
-    private Integer[][] matrix;
+    private final Integer[][] matrix;
 
     public Matrica(Integer[][] matrix) {
         this.matrix = matrix;

@@ -15,10 +15,9 @@ public class Exception2 {
             } catch (ArithmeticException e) {
                 System.out.println("division by zero");
             }
-        }  catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.out.println("wrong type of entered data");
         }
-
 
 
     }

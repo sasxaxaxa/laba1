@@ -1,11 +1,11 @@
 package pack.lab4.lab41.reader5;
 
 class Reader {
-    private String fullName;
-    private int libraryCardNumber;
-    private String faculty;
-    private String dateOfBirth;
-    private String phoneNumber;
+    private final String fullName;
+    private final int libraryCardNumber;
+    private final String faculty;
+    private final String dateOfBirth;
+    private final String phoneNumber;
 
     public Reader(String fullName, int libraryCardNumber, String faculty, String dateOfBirth, String phoneNumber) {
         this.fullName = fullName;

@@ -1,6 +1,8 @@
 package pack.lab11.ex4;
 
-import java.util.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
 
 public class Data {
     public static void main(String[] args) {

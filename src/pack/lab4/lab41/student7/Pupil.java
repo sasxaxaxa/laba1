@@ -1,8 +1,8 @@
 package pack.lab4.lab41.student7;
 
 class Pupil {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public Pupil(String name, int age) {
         this.name = name;
@@ -23,7 +23,7 @@ class Pupil {
 }
 
 class SchoolChild extends Pupil {
-    private int course;
+    private final int course;
 
     public SchoolChild(String name, int age, int course) {
         super(name, age);
@@ -36,7 +36,7 @@ class SchoolChild extends Pupil {
 }
 
 class Student extends Pupil {
-    private String university;
+    private final String university;
 
     public Student(String name, int age, String university) {
         super(name, age);

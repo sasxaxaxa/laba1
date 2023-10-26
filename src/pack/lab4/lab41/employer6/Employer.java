@@ -1,20 +1,24 @@
 package pack.lab4.lab41.employer6;
 
 public class Employer {
-    private String firstName;
-    private String lastName;
-    private double income;
+    private final String firstName;
+    private final String lastName;
+    private final double income;
+
     public Employer(String firstName, String lastName, double income) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.income = income;
     }
+
     public double getIncome() {
         return income;
     }
+
     public String getFirstName() {
         return firstName;
     }
+
     public String getLastName() {
         return lastName;
     }

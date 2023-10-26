@@ -99,12 +99,14 @@ public class lab1 {
         System.out.println("max = " + max);
         System.out.println("min = " + min);
     }
+
     public static void ex5(String[] args) {
 
         for (int i = 0; i < args.length; i++) {
             System.out.println(args[i]);
         }
     }
+
     public static void ex6() {
         System.out.println("__EXERCISE 6__\n" +
                 "Написать программу, в результате работы которой выводятся на экран\n" +
@@ -113,9 +115,10 @@ public class lab1 {
         System.out.println("enter length of harmonic series ->");
         int size = sc.nextInt();
         for (int i = 1; i <= size; i++) {
-            System.out.println(i + " element =  1/" + i + " = " + 1./i);
+            System.out.println(i + " element =  1/" + i + " = " + 1. / i);
         }
     }
+
     public static void ex7() {
         System.out.println("__EXERCISE 7__\n" +
                 "Написать программу, которая с помощью метода класса, вычисляет\n" +

@@ -1,8 +1,8 @@
 package pack.lab3;
-import java.util.Formatter;
+
 public class obolochki_1_1 {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String s = ", ";
 
         int ix = 99;
@@ -18,10 +18,10 @@ public class obolochki_1_1 {
 
         System.out.println("Первое приведение типов:");
         System.out.println("int: " + ix + ", double: " + dx + ", float: " + fx + ", string: " + sx);
-        System.out.println("Double: " + d1 + s + d2 + s + d3+ s + d4);
+        System.out.println("Double: " + d1 + s + d2 + s + d3 + s + d4);
 
 
-        Double e = Math.random()*10;
+        Double e = Math.random() * 10;
         int ei = e.intValue();
         String es = e.toString();
         float ef = e.floatValue();

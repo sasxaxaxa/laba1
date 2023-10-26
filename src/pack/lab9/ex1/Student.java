@@ -1,9 +1,9 @@
 package pack.lab9.ex1;
 
 public class Student {
-    private String firstName;
-    private String lastName;
-    private int number;
+    private final String firstName;
+    private final String lastName;
+    private final int number;
 
     public Student(String firstName, String lastName, int number) {
         this.firstName = firstName;

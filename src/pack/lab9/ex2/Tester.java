@@ -91,7 +91,7 @@ public class Tester {
     }
 
 
-    private static SortingStudentsByGPA comp = new SortingStudentsByGPA();
+    private static final SortingStudentsByGPA comp = new SortingStudentsByGPA();
 
     public static void quickSort(Object[] array, int high, int low) {
         if (array == null || array.length == 0) return;

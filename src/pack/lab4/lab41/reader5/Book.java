@@ -1,8 +1,8 @@
 package pack.lab4.lab41.reader5;
 
 public class Book {
-    private String title;
-    private String author;
+    private final String title;
+    private final String author;
 
     public Book(String title, String author) {
         this.title = title;

@@ -1,8 +1,9 @@
 package pack.lab3.lab3example;
 
 import java.util.Random;
+
 public class generateRandom {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 // Создаем экземпляр класса Random
         Random rand = new Random();
 // Генерируем рандомно целые числа в диапазоне 0 to 999

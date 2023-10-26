@@ -13,6 +13,6 @@ public class FormatDemo2 {
         formatter.format("Строка c форматированием: %8.2f%n",
                 x);
         formatter.format("Строка c форматированием: %16.2f%n", x);
-                System.out.println(formatter);
+        System.out.println(formatter);
     }
 }

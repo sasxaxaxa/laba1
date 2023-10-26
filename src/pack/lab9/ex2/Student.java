@@ -37,7 +37,7 @@ public class Student implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        if(!(o instanceof Student))
+        if (!(o instanceof Student))
             throw new IllegalArgumentException("Объект не является студентом!");
         // < 0 -> o, 0 -> ==, >0 -> this;
         return this.idNum - ((Student) o).idNum;
