@@ -18,7 +18,7 @@ public class Exception3 {
     }
 
     public static void main(String[] args) {
-        Exception3 e2 = new Exception3();
-        e2.exceptionDemo();
+        Exception3 e3 = new Exception3();
+        e3.exceptionDemo();
     }
 }
