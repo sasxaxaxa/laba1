@@ -7,14 +7,11 @@ import java.util.Scanner;
 public class Data {
     public static void main(String[] args) {
         Date currentDate = new Date();
-
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Введите дату в формате ДД.ММ.ГГГГ: ");
-        String userInput = sc.nextLine();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
         Date userDate = null;
-
-        try {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Введите дату в формате ДД.ММ.ГГГГ: ");
+            String userInput = sc.nextLine();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
             userDate = dateFormat.parse(userInput);
         } catch (java.text.ParseException e) {
             System.out.println("Неверный формат даты!");
@@ -28,6 +25,5 @@ public class Data {
         } else {
             System.out.println("Введенная дата больше");
         }
-        sc.close();
     }
 }

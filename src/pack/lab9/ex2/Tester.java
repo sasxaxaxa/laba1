@@ -91,22 +91,28 @@ public class Tester {
     }
 
 
-    private static final SortingStudentsByGPA comp = new SortingStudentsByGPA();
+    private static final SortingStudentsByGPA COMP = new SortingStudentsByGPA();
 
     public static void quickSort(Object[] array, int high, int low) {
-        if (array == null || array.length == 0) return;
-        if (high <= low) return;
+        if (array == null || array.length == 0) {
+            return;
+        }
+        if (high <= low) {
+            return;
+        }
 
         Object middle = array[(low + high) / 2];
         ArrayList<Object> left = new ArrayList<>();
         ArrayList<Object> right = new ArrayList<>();
         ArrayList<Object> eq = new ArrayList<>();
         for (int i = low; i <= high; i++) {
-            if (comp.compare(array[i], middle) > 0) {
+            if (COMP.compare(array[i], middle) > 0) {
                 right.add(array[i]);
-            } else if (comp.compare(array[i], middle) < 0)
+            } else if (COMP.compare(array[i], middle) < 0) {
                 left.add(array[i]);
-            else eq.add(array[i]);
+            } else {
+                eq.add(array[i]);
+            }
         }
         Object[] leftArr;
         Object[] rightArr;
