@@ -9,7 +9,7 @@ public class Tester {
     public static void main(String[] args) {
 
 
-        Scanner scanner = new Scanner(System.in);
+
 
         ArrayList<Student> students = new ArrayList<>();
 
@@ -28,7 +28,7 @@ public class Tester {
 
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Введите имя студента для поиска: ");
-            String searchName = scanner.nextLine();
+            String searchName = sc.nextLine();
             try {
                 Student foundStudent = findStudentByName(students, searchName);
                 System.out.println("Найденный студент: " + foundStudent);

@@ -19,7 +19,7 @@ public class ThrowsDemo {
     }
 
     private String getDetails(String key) {
-        if (key == "") {
+        if (key.isBlank()) {
             return "empty string";
         }
         return "data for " + key;
