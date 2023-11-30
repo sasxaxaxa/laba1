@@ -9,6 +9,6 @@ public class StudentComparator implements Comparator<Student> {
         if (!(o1 instanceof Student && o2 instanceof Student))
             throw new IllegalArgumentException("Объекты не являются студентами!");
 
-        return (int) (((Student) o1).getAverageScore() - ((Student) o2).getAverageScore());
+        return (int) (o1.getAverageScore() - o2.getAverageScore());
     }
 }
