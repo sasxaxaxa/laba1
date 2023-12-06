@@ -1,9 +1,9 @@
 package pack.lab23.exercises.ex2;
 
 public class LinkedQueue<T> implements Queue<T> {
-    private Node<T> head; // голова очереди
-    private Node<T> tail; // хвост очереди
-    private int size; // количество элементов в очереди
+    private Node<T> head;
+    private Node<T> tail;
+    private int size;
 
     private static class Node<T> {
         T data;

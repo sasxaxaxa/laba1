@@ -1,7 +1,7 @@
 package pack.lab23.exercises.ex3;
 
 public class Variable extends Expression {
-    private String name;
+    private final String name;
 
     public Variable(String name) {
         this.name = name;

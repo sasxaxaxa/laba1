@@ -1,8 +1,8 @@
 package pack.lab23.exercises.ex3;
 
 public class Divide extends Expression {
-    private Expression one;
-    private Expression two;
+    private final Expression one;
+    private final Expression two;
 
     public Divide(Expression one, Expression two) {
         this.one = one;

@@ -1,8 +1,8 @@
 package pack.lab23.exercises.ex3;
 
 public class Subtract extends Expression {
-    private Expression one;
-    private Expression two;
+    private final Expression one;
+    private final Expression two;
 
     public Subtract(Expression left, Expression right) {
         this.one = left;

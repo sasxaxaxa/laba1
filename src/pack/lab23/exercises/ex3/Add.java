@@ -1,8 +1,8 @@
 package pack.lab23.exercises.ex3;
 
 public class Add extends Expression {
-    private Expression one;
-    private Expression two;
+    private final Expression one;
+    private final Expression two;
 
     public Add(Expression one, Expression two) {
         this.one = one;

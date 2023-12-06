@@ -1,7 +1,7 @@
 package pack.lab23.exercises.ex3;
 
 public class Const extends Expression {
-    private double value;
+    private final double value;
 
     public Const(double value) {
         this.value = value;

@@ -51,8 +51,6 @@ public class Tester {
         queueADT.clear();
 
 
-
-
         System.out.println();
         ArrayQueue queue = new ArrayQueue(5);
         queue.enqueue(1);
@@ -71,7 +69,6 @@ public class Tester {
         queue.clear();
 
         System.out.println();
-
 
 
     }

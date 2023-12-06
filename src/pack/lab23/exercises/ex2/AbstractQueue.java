@@ -1,4 +1,5 @@
 package pack.lab23.exercises.ex2;
+
 public abstract class AbstractQueue<T> implements Queue<T> {
     protected int size; // количество элементов в очереди
 
@@ -8,7 +9,7 @@ public abstract class AbstractQueue<T> implements Queue<T> {
 
     public T dequeue() {
         if (isEmpty()) {
-            throw new IllegalStateException("Queue is empty");
+            throw new IllegalStateException("Очередь пустая");
         }
         size--;
         return remove();
@@ -16,7 +17,7 @@ public abstract class AbstractQueue<T> implements Queue<T> {
 
     public T peek() {
         if (isEmpty()) {
-            throw new IllegalStateException("Queue is empty");
+            throw new IllegalStateException("Очередь пустая");
         }
         return get();
     }

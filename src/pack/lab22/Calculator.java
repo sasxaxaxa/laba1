@@ -45,24 +45,24 @@ public class Calculator {
 
     private double calculateRpn(String input) {
         Stack<Double> stack = new Stack<>();
-        String[] tokens = input.split(" ");
+        String[] symbols = input.split(" ");
 
-        for (String token : tokens) {
-            if (token.matches("-?\\d+(\\.\\d+)?")) { //ЭТО ПРОВЕРКА НА ДРОБНОЕ ЧИСЛО Я НЕ ПОНИМАЮ КАК ОНА РАБОТАЕТ
-                stack.push(Double.parseDouble(token));
-            } else if (token.equals("+")) {
+        for (String symbol : symbols) {
+            if (symbol.matches("-?\\d+(\\.\\d+)?")) { //ЭТО ПРОВЕРКА НА ДРОБНОЕ ЧИСЛО С РЕГУЛЯРНЫМ ВЫРАЖЕНИЕМ
+                stack.push(Double.parseDouble(symbol));
+            } else if (symbol.equals("+")) {
                 double operand2 = stack.pop();
                 double operand1 = stack.pop();
                 stack.push(operand1 + operand2);
-            } else if (token.equals("-")) {
+            } else if (symbol.equals("-")) {
                 double operand2 = stack.pop();
                 double operand1 = stack.pop();
                 stack.push(operand1 - operand2);
-            } else if (token.equals("*")) {
+            } else if (symbol.equals("*")) {
                 double operand2 = stack.pop();
                 double operand1 = stack.pop();
                 stack.push(operand1 * operand2);
-            } else if (token.equals("/")) {
+            } else if (symbol.equals("/")) {
                 double operand2 = stack.pop();
                 double operand1 = stack.pop();
                 stack.push(operand1 / operand2);
