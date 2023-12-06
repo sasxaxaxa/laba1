@@ -1,4 +1,4 @@
-package pack.lab27.ex1;
+package pack.lab27;
 
 import java.util.Arrays;
 

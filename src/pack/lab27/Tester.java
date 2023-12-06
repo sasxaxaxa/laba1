@@ -1,4 +1,6 @@
-package pack.lab27.ex1;
+package pack.lab27;
+
+
 
 public class Tester {
     public static void main(String[] args) {
