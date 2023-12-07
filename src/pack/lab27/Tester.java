@@ -1,7 +1,6 @@
 package pack.lab27;
 
 
-
 public class Tester {
     public static void main(String[] args) {
         HashTab hashTab = new HashTab();

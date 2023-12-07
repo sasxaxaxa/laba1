@@ -1,6 +1,5 @@
 package pack.lab29;
 
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Graph {
@@ -8,7 +7,7 @@ public class Graph {
 
     public static void main(String[] args) {
         Graph graph = new Graph();
-        int c = graph.solve1();
+        int c = solve1();
         System.out.println(c);
 
     }
@@ -45,7 +44,6 @@ public class Graph {
                 }
             }
         }
-
         return c;
     }
 }

@@ -1,5 +1,7 @@
 package pack.lab28.examples.ex2;
 
+import java.util.Objects;
+
 public class Student {
     private int number;//номер студенческого билета
     private String name;//имя студента
@@ -14,8 +16,7 @@ public class Student {
 
         if (age != student.age) return false;
         if (number != student.number) return false;
-        if (name != null ? !name.equals(student.name) : student.name != null) return false;
-        return true;
+        return Objects.equals(name, student.name);
     }
 
     @Override
@@ -25,6 +26,7 @@ public class Student {
         result = 31 * result + age;
         return result;
     }
+
     public int getNumber() {
         return number;
     }
@@ -54,6 +56,7 @@ public class Student {
         this.name = name;
         this.age = age;
     }
+
     public String toString() {
         return "Student{" +
                 "number=" + number +

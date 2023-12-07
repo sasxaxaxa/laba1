@@ -1,6 +1,9 @@
 package pack.lab28.examples.ex1;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 
 public class ExampleSortSet {
     public static void main(String[] args) {

@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 public class FirstList<Integer> implements Iterable<Integer> {
-    private Integer[] array;
-    private int size;
+    private final Integer[] array;
+    private final int size;
 
     public FirstList(Integer[] array) {
         this.array = array;
@@ -24,14 +24,11 @@ public class FirstList<Integer> implements Iterable<Integer> {
     public Iterator<Integer> iterator() {
         Iterator<Integer> it = new Iterator<Integer>() {
 
-            private int index = 0;
+            private final int index = 0;
 
             @Override
             public boolean hasNext() {
-                if (size > index && array[index] != null) {
-                    return true;
-                }
-                return false;
+                return size > index && array[index] != null;
             }
 
             @Override

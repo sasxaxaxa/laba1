@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 
 public class HashTab {
-    private int size = 10;
-    private Elem[] table;
+    private final int size = 10;
+    private final Elem[] table;
 
     public HashTab() {
         table = new Elem[size];
@@ -13,8 +13,8 @@ public class HashTab {
     }
 
     public class Elem {
-        private String key;
-        private int value;
+        private final String key;
+        private final int value;
         private Elem nextelem = null;
 
         public Elem(String key, int value) {

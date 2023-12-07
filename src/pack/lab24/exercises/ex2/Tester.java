@@ -18,7 +18,7 @@ public class Tester {
                     System.out.println("Enter age: ");
                     int age = sc.nextInt();
                     VictorianChair chair = new VictorianChair(age);
-                    System.out.println(chair.toString());
+                    System.out.println(chair);
                     break;
                 }
                 case ("3"): {
