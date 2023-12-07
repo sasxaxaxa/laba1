@@ -1,6 +1,5 @@
 package pack.lab28.exercises;
 
-
 import java.util.HashSet;
 import java.util.TreeSet;
 
